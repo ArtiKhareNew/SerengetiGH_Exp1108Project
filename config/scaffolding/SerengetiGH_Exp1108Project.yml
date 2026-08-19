@@ -8,14 +8,22 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: DivisionPackage
+  version: "5.0"
   gitServerName: srcGithubCtrl_Arti_exp1108
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: OpenWeatherClient
+  version: "1.0"
   wpmServer: https://packages.webmethods.io
   wpmRegistry: public
   wpmVersion: latest
+- name: AddIntsPackage
+  version: "1.0"
+  gitServerName: srcCtrl_shared_AzRepos_Arti
+  gitUrl: https://dev.azure.com/ArtiKhare/AddIntsPackage/_git
+  gitUsername: ArtiKhare
+  gitBranch: master
 services:
 - serviceName: project.serengetigh_exp1108.integrations:gcd1108
   packages:
@@ -23,6 +31,10 @@ services:
     version: "1.0"
   - name: DivisionPackage
     version: "5.0"
+  - name: AddIntsPackage
+    version: "1.0"
+  - name: OpenWeatherClient
+    version: "1.0"
 - serviceName: pub.date:getCurrentDate
   packages:
   - name: WmPublic
@@ -33,6 +45,10 @@ services:
     version: "1.0"
   - name: DivisionPackage
     version: "5.0"
+  - name: AddIntsPackage
+    version: "1.0"
+  - name: OpenWeatherClient
+    version: "1.0"
 - serviceName: DivisionPackage:division_service
   packages:
   - name: DivisionPackage
@@ -47,6 +63,10 @@ services:
     version: "1.0"
   - name: DivisionPackage
     version: "5.0"
+  - name: AddIntsPackage
+    version: "1.0"
+  - name: OpenWeatherClient
+    version: "1.0"
 - serviceName: pub.string:toLower
   packages:
   - name: WmPublic
