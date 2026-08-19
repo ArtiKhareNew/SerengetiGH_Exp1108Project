@@ -7,12 +7,6 @@ packages:
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
   gitBranch: main
-- name: DivisionPackage
-  version: "5.0"
-  gitServerName: srcGithubCtrl_Arti_exp1108
-  gitUrl: https://github.com/ArtiKhareNew
-  gitUsername: ArtiKhareNew
-  gitBranch: main
 - name: OpenWeatherClient
   version: "1.0"
   wpmServer: https://packages.webmethods.io
@@ -24,6 +18,11 @@ packages:
   gitUrl: https://dev.azure.com/ArtiKhare/AddIntsPackage/_git
   gitUsername: ArtiKhare
   gitBranch: master
+- name: DivisionPackage
+  gitServerName: src_shared_GithubCtrl_Arti
+  gitUrl: https://github.com/ArtiKhareNew
+  gitUsername: ArtiKhareNew
+  gitBranch: second_branch
 services:
 - serviceName: project.serengetigh_exp1108.integrations:gcd1108
   packages:
