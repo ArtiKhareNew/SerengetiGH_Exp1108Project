@@ -12,6 +12,10 @@ packages:
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
   gitBranch: main
+- name: OpenWeatherClient
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: public
+  wpmVersion: latest
 services:
 - serviceName: project.serengetigh_exp1108.integrations:gcd1108
   packages:
