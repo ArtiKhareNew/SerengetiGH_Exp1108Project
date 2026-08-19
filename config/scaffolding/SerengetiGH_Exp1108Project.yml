@@ -7,6 +7,23 @@ packages:
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
   gitBranch: main
+services:
+- serviceName: project.serengetigh_exp1108.integrations:gcd1108
+  packages:
+  - name: SerengetiGH_Exp1108Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
+- serviceName: project.serengetigh_exp1108.integrations:ll
+  packages:
+  - name: SerengetiGH_Exp1108Project
+    version: "1.0"
+- serviceName: pub.string:toLower
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
