@@ -8,11 +8,10 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: DivisionPackage
-  version: "5.0"
-  gitServerName: src_shared_GithubCtrl_Arti
+  gitServerName: srcGithubCtrl_Arti_exp1108
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
-  gitBranch: second_branch
+  gitBranch: main
 services:
 - serviceName: project.serengetigh_exp1108.integrations:gcd1108
   packages:
