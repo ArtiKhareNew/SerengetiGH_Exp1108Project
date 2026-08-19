@@ -12,7 +12,7 @@ packages:
   gitServerName: src_shared_GithubCtrl_Arti
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
-  gitBranch: main
+  gitBranch: second_branch
 services:
 - serviceName: project.serengetigh_exp1108.integrations:gcd1108
   packages:
