@@ -8,6 +8,7 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: DivisionPackage
+  version: "5.0"
   gitServerName: src_shared_GithubCtrl_Arti
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
@@ -17,7 +18,23 @@ services:
   packages:
   - name: SerengetiGH_Exp1108Project
     version: "1.0"
+  - name: DivisionPackage
+    version: "5.0"
 - serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
+- serviceName: project.serengetigh_exp1108.integrations:githubfs
+  packages:
+  - name: SerengetiGH_Exp1108Project
+    version: "1.0"
+  - name: DivisionPackage
+    version: "5.0"
+- serviceName: DivisionPackage:division_service
+  packages:
+  - name: DivisionPackage
+    version: "5.0"
+- serviceName: pub.math:divideInts
   packages:
   - name: WmPublic
     version: 12.1.0.0.1032
@@ -25,6 +42,8 @@ services:
   packages:
   - name: SerengetiGH_Exp1108Project
     version: "1.0"
+  - name: DivisionPackage
+    version: "5.0"
 - serviceName: pub.string:toLower
   packages:
   - name: WmPublic
